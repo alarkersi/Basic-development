@@ -22,10 +22,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    //標準の配列
+    NSArray *array = [[NSArray alloc] initWithObjects:@"aaa", @"bbb", @"ccc", nil];
+    id element = [array objectAtIndex:0];
+    //＠
+    NSArray *array_succinctness = @[@"lu", @"da", @"shi", @YES, @123];
+    NSLog(@"カウント：%@", @(array_succinctness.count));
+    for (int i = 0; i < array_succinctness.count; i++)
+    {
+        NSLog(@"%@", array_succinctness[i]);
+    }
     
     
-    NSArray *items = @[@1, @2, @3];
-    NSLog(@"カウント：%@", @(items.count));
+    //標準のDictionary
+    NSDictionary *dictionay = [NSDictionary dictionaryWithObjectsAndKeys:@"value1", @"key1", @"value2", @"key2", nil];
+    id value = [dictionay objectForKey:@"key1"];
+    NSLog(@"key1 => %@", value);
+    //＠
+    NSDictionary *dictionary = @{
+                                 @"key0" : @"value0",
+                                 @"key1" : @"value1",
+                                 @"key2" : @"value2"
+                                 };
+    NSLog(@"key2 => %@", dictionary[@"key2"]);
+    
+    //標準のNumber
+    NSNumber *num_int = [NSNumber numberWithInt:10];
+    NSNumber *num_float = [NSNumber numberWithFloat:8.888];
+    //＠
+    NSNumber *a = @12;
+    NSNumber *b = @23.24;
+    NSNumber *c = @('a');//aのASCIIコード
+    //＠のString
+    NSString *string = @"iOS Japan";
+    NSMutableString *mutString = @"iOS Japan".mutableCopy;//変更的string
+    
+    [mutString insertString:@"hello," atIndex:0];
+    NSLog(@"%@",mutString);
 }
 
 
