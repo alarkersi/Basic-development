@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Enum/Enum.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Sizeof_strlen.xcodeproj">
    </FileRef>
 </Workspace>
