@@ -18,7 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSUInteger x, y;
+    
+    extern NSString *word;//全局常量word
+    NSLog(@"delegate: %@",word);
     /*
      factoryMethodAはinstancetypeのタイプをバックするため、ここはViewControllerをリターンする
      countメソードがないから、エラーを出す。

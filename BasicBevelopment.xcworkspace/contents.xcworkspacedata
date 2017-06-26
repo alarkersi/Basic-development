@@ -7,4 +7,7 @@
    <FileRef
       location = "group:Sizeof_strlen.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SwiftTour/SwiftTour.xcodeproj">
+   </FileRef>
 </Workspace>

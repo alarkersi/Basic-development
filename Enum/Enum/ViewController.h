@@ -10,8 +10,9 @@
 
 @interface ViewController : UIViewController
 
-
 + (instancetype)factoryMethodA;
 + (id)factoryMethodB;
+
+@property(nonatomic, assign)NSObject *assignPoint;
 @end
 
